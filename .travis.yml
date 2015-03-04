@@ -5,11 +5,12 @@ before_script:
 - gem install xcpretty -N
 
 # Set up mock API server
+- cd ..
 - git clone https://github.com/minhtule/SimpleMockServer
 - cd SimpleMockServer
 - npm install
 - node app.js &
-- cd ..
+- cd ../SimpleiOSTest
 
 script:
 - set -o pipefail
