@@ -1,4 +1,11 @@
 language: objective-c
 osx_image: xcode611
+
+before_script:
+- git clone https://github.com/minhtule/SimpleMockServer
+- cd SimpleMockServer
+- npm install
+- node app.js &
+
 script:
 - xcodebuild -project SimpleTest.xcodeproj -scheme "SimpleTest" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO test
