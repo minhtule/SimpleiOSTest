@@ -6,6 +6,7 @@ before_script:
 - cd SimpleMockServer
 - npm install
 - node app.js &
+- cd ..
 
 script:
 - xcodebuild -project SimpleTest.xcodeproj -scheme "SimpleTest" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO test
