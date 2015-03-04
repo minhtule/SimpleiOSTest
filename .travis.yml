@@ -10,6 +10,7 @@ before_script:
 - cd SimpleMockServer
 - npm install
 - node app.js &
+- sleep 3  # Give mock server some time to bind to sockets, etc
 - cd ../SimpleiOSTest
 
 script:
