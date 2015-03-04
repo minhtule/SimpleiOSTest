@@ -13,6 +13,8 @@
 		41BB3E141AA6A2C100A2B310 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BB3E131AA6A2C100A2B310 /* Images.xcassets */; };
 		41BB3E171AA6A2C100A2B310 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BB3E151AA6A2C100A2B310 /* LaunchScreen.xib */; };
 		41BB3E231AA6A2C100A2B310 /* SimpleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB3E221AA6A2C100A2B310 /* SimpleTestTests.swift */; };
+		41BB3E441AA6A8E200A2B310 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB3E431AA6A8E200A2B310 /* Alamofire.swift */; };
+		41BB3E451AA6A8EC00A2B310 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BB3E431AA6A8E200A2B310 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		41BB3E1C1AA6A2C100A2B310 /* SimpleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BB3E211AA6A2C100A2B310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41BB3E221AA6A2C100A2B310 /* SimpleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTestTests.swift; sourceTree = "<group>"; };
+		41BB3E431AA6A8E200A2B310 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		41BB3E091AA6A2C100A2B310 /* SimpleTest */ = {
 			isa = PBXGroup;
 			children = (
+				41BB3E431AA6A8E200A2B310 /* Alamofire.swift */,
 				41BB3E0C1AA6A2C100A2B310 /* AppDelegate.swift */,
 				41BB3E0E1AA6A2C100A2B310 /* ViewController.swift */,
 				41BB3E101AA6A2C100A2B310 /* Main.storyboard */,
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BB3E441AA6A8E200A2B310 /* Alamofire.swift in Sources */,
 				41BB3E0F1AA6A2C100A2B310 /* ViewController.swift in Sources */,
 				41BB3E0D1AA6A2C100A2B310 /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BB3E451AA6A8EC00A2B310 /* Alamofire.swift in Sources */,
 				41BB3E231AA6A2C100A2B310 /* SimpleTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
