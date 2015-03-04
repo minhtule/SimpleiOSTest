@@ -2,6 +2,9 @@ language: objective-c
 osx_image: xcode611
 
 before_script:
+- gem install xcpretty -N
+
+# Set up mock API server
 - git clone https://github.com/minhtule/SimpleMockServer
 - cd SimpleMockServer
 - npm install
@@ -9,4 +12,5 @@ before_script:
 - cd ..
 
 script:
-- xcodebuild -project SimpleTest.xcodeproj -scheme "SimpleTest" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO test
+- set -o pipefail
+- xcodebuild -project SimpleTest.xcodeproj -scheme "SimpleTest" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=NO test | xcpretty -c
